@@ -37,18 +37,6 @@
       "detail": "https://api.ukuapi88.com",
       "is_adult": false
     },
-    "ikunzy": {
-      "api": "https://ikunzyapi.com/api.php/provide/vod",
-      "name": "TV-ikun资源",
-      "detail": "https://ikunzyapi.com",
-      "is_adult": false
-    },
-    "wujinapi_cc": {
-      "api": "https://api.wujinapi.cc/api.php/provide/vod",
-      "name": "TV-wujinapi无尽",
-      "detail": "",
-      "is_adult": false
-    },
     "yayazy": {
       "api": "https://cj.yayazy.net/api.php/provide/vod",
       "name": "TV-丫丫点播",
@@ -191,12 +179,6 @@
       "api": "https://sdzyapi.com/api.php/provide/vod",
       "name": "TV-闪电资源",
       "detail": "https://sdzyapi.com",
-      "is_adult": false
-    },
-    "mozhuazy": {
-      "api": "https://mozhuazy.com/api.php/provide/vod",
-      "name": "TV-魔爪资源",
-      "detail": "https://mozhuazy.com",
       "is_adult": false
     },
     "moduapi": {
