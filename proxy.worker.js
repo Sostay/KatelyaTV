@@ -174,7 +174,6 @@ function getRootHtml() {
   <style>
       body, html {
           height: 100%;
-          max-width: 95%;
           margin: 0;
       }
       .background {
