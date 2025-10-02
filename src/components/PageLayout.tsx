@@ -83,10 +83,10 @@ const TopNavbar = ({ activePath = '/' }: { activePath?: string }) => {
               href='/'
               className='flex items-center select-none hover:opacity-80 transition-opacity duration-200'
             >
-              <img src="./logo.png" width="30" height="30" style="margin-right:6px">
-                <span className='text-2xl font-bold katelya-logo tracking-tight'>
-                  {siteName}
-                </span>
+              <img src="./logo.png" width="30" height="30" style="margin-right:6px" />
+              <span className='text-2xl font-bold katelya-logo tracking-tight'>
+                {siteName}
+              </span>
             </Link>
           </div>
 
