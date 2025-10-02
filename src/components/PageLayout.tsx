@@ -83,9 +83,10 @@ const TopNavbar = ({ activePath = '/' }: { activePath?: string }) => {
               href='/'
               className='flex items-center select-none hover:opacity-80 transition-opacity duration-200'
             >
-              <span className='text-2xl font-bold katelya-logo tracking-tight'>
-                {siteName}
-              </span>
+              <img src="./logo.png" width="30" height="30" style="margin-right:6px">
+                <span className='text-2xl font-bold katelya-logo tracking-tight'>
+                  {siteName}
+                </span>
             </Link>
           </div>
 
@@ -120,11 +121,10 @@ const TopNavbar = ({ activePath = '/' }: { activePath?: string }) => {
                         setActive('/search');
                       }}
                       data-active={isActive}
-                      className={`group flex items-center rounded-lg px-3 py-2 text-sm font-medium transition-colors duration-200 ${
-                        isActive
-                          ? 'bg-purple-500/20 text-purple-700 dark:bg-purple-500/10 dark:text-purple-400'
-                          : 'text-gray-700 hover:bg-purple-100/30 hover:text-purple-600 dark:text-gray-300 dark:hover:text-purple-400 dark:hover:bg-purple-500/10'
-                      }`}
+                      className={`group flex items-center rounded-lg px-3 py-2 text-sm font-medium transition-colors duration-200 ${isActive
+                        ? 'bg-purple-500/20 text-purple-700 dark:bg-purple-500/10 dark:text-purple-400'
+                        : 'text-gray-700 hover:bg-purple-100/30 hover:text-purple-600 dark:text-gray-300 dark:hover:text-purple-400 dark:hover:bg-purple-500/10'
+                        }`}
                     >
                       <Icon className='h-4 w-4 mr-2' />
                       {item.label}
@@ -138,11 +138,10 @@ const TopNavbar = ({ activePath = '/' }: { activePath?: string }) => {
                     href={item.href}
                     onClick={() => setActive(item.href)}
                     data-active={isActive}
-                    className={`group flex items-center rounded-lg px-3 py-2 text-sm font-medium transition-colors duration-200 ${
-                      isActive
-                        ? 'bg-purple-500/20 text-purple-700 dark:bg-purple-500/10 dark:text-purple-400'
-                        : 'text-gray-700 hover:bg-purple-100/30 hover:text-purple-600 dark:text-gray-300 dark:hover:text-purple-400 dark:hover:bg-purple-500/10'
-                    }`}
+                    className={`group flex items-center rounded-lg px-3 py-2 text-sm font-medium transition-colors duration-200 ${isActive
+                      ? 'bg-purple-500/20 text-purple-700 dark:bg-purple-500/10 dark:text-purple-400'
+                      : 'text-gray-700 hover:bg-purple-100/30 hover:text-purple-600 dark:text-gray-300 dark:hover:text-purple-400 dark:hover:bg-purple-500/10'
+                      }`}
                   >
                     <Icon className='h-4 w-4 mr-2' />
                     {item.label}
@@ -172,8 +171,8 @@ const PageLayout = ({ children, activePath = '/' }: PageLayoutProps) => {
       {/* 桌面端顶部导航栏 (fixed) */}
       <TopNavbar activePath={activePath} />
 
-  {/* 主内容区域 - 预留桌面端顶部导航高度 64px */}
-  <div className='relative min-w-0 transition-all duration-300 md:pt-16'>
+      {/* 主内容区域 - 预留桌面端顶部导航高度 64px */}
+      <div className='relative min-w-0 transition-all duration-300 md:pt-16'>
         {/* 桌面端左上角返回按钮 */}
         {['/play'].includes(activePath) && (
           <div className='absolute top-3 left-1 z-20 hidden md:flex'>
@@ -188,16 +187,16 @@ const PageLayout = ({ children, activePath = '/' }: PageLayoutProps) => {
             {/* 左侧留白区域 - 播放页面占8.33%，其他页面占16.67% */}
             <div
               className='hidden md:block flex-shrink-0'
-              style={{ 
-                width: ['/play'].includes(activePath) ? '8.33%' : '16.67%' 
+              style={{
+                width: ['/play'].includes(activePath) ? '8.33%' : '16.67%'
               }}
             ></div>
 
             {/* 主内容区 - 播放页面占83.33%，其他页面占66.67% */}
             <div
               className='flex-1 md:flex-none rounded-container w-full'
-              style={{ 
-                width: ['/play'].includes(activePath) ? '83.33%' : '66.67%' 
+              style={{
+                width: ['/play'].includes(activePath) ? '83.33%' : '66.67%'
               }}
             >
               <div
@@ -213,8 +212,8 @@ const PageLayout = ({ children, activePath = '/' }: PageLayoutProps) => {
             {/* 右侧留白区域 - 播放页面占8.33%，其他页面占16.67% */}
             <div
               className='hidden md:block flex-shrink-0'
-              style={{ 
-                width: ['/play'].includes(activePath) ? '8.33%' : '16.67%' 
+              style={{
+                width: ['/play'].includes(activePath) ? '8.33%' : '16.67%'
               }}
             ></div>
           </div>
