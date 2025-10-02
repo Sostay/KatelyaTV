@@ -34,6 +34,7 @@ const MobileHeader = ({ showBackButton = false }: MobileHeaderProps) => {
           href='/'
           className='text-2xl font-bold katelya-logo tracking-tight hover:opacity-80 transition-opacity'
         >
+          <img src="./logo.png" width="30" height="30" style={{ marginRight: '6px' }} alt="" />
           {siteName}
         </Link>
       </div>
