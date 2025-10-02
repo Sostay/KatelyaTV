@@ -170,7 +170,7 @@ function LoginPageClient() {
         <div className='relative z-10 w-full max-w-md rounded-3xl bg-white/90 dark:bg-zinc-900/90 backdrop-blur-xl shadow-2xl p-10 dark:border dark:border-zinc-800 border border-gray-200'>
           {/* 简化的Logo - iOS Safari兼容 */}
           <h1 className='text-center text-3xl font-extrabold mb-8'>
-            <img src="./logo.png" width="30" height="30" style={{ marginRight: '6px', marginTop: '-6px', display: 'inherit' }} alt="" />
+            <img src="./logo.png" width="40" height="40" style={{ marginRight: '6px', marginTop: '-6px', display: 'initial' }} alt="" />
             <span className='bg-gradient-to-r from-purple-600 via-pink-600 to-purple-600 dark:from-purple-400 dark:via-pink-400 dark:to-purple-400 bg-clip-text text-transparent'>
               {siteName}
             </span>
