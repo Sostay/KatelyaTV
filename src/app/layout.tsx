@@ -13,8 +13,8 @@ const inter = Inter({ subsets: ['latin'] });
 
 // 动态生成 metadata，支持配置更新后的标题变化
 export async function generateMetadata(): Promise<Metadata> {
-  let siteName = process.env.SITE_NAME || 'KatelyaTV';
-  
+  let siteName = process.env.SITE_NAME || 'MoonTV';
+
   try {
     // 只有在非 d1 和 upstash 存储类型时才尝试获取配置
     if (
