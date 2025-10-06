@@ -157,12 +157,6 @@
       "detail": "",
       "is_adult": false
     },
-    "hongniuzy2": {
-      "api": "https://www.hongniuzy2.com/api.php/provide/vod",
-      "name": "TV-红牛资源",
-      "detail": "https://www.hongniuzy2.com",
-      "is_adult": false
-    },
     "maotaizy": {
       "api": "https://caiji.maotaizy.cc/api.php/provide/vod",
       "name": "TV-茅台资源",
