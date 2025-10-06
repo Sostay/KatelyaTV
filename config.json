@@ -307,18 +307,6 @@
       "detail": "https://www.mdzyapi.com",
       "is_adult": false
     },
-    "heimuer": {
-      "api": "https://json.heimuer.xyz/api.php/provide/vod",
-      "name": "TV-黑木耳",
-      "detail": "https://json.heimuer.xyz",
-      "is_adult": false
-    },
-    "heimuer02": {
-      "api": "https://json02.heimuer.xyz/api.php/provide/vod",
-      "name": "TV-黑木耳点播",
-      "detail": "https://json02.heimuer.xyz",
-      "is_adult": false
-    },
     "91md": {
       "api": "https://91md.me/api.php/provide/vod",
       "name": "AV-91麻豆",
